@@ -58,11 +58,8 @@
 <script>
   // self executing function here
   (function() {
-    for (var i = 1; i <= 4; i++) {
-      $("#bird" + i).click(function(e) {
-        console.log(e)
-        console.log('hello!')
-      })
-    }
+    $("#bird1").click(function(e) {
+      $("#bird1").css("opacity", "0")
+    })
   })();
 </script>
