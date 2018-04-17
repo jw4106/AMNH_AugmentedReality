@@ -5,13 +5,56 @@
 		<style type="text/css">
 			body {
 				margin: 0px;
-				overflow: hidden;
 			}
+      
+      .bird {
+        width: 50px;
+        position: fixed;
+        z-index: 1000;
+      }
+
+      #tree {
+        padding-left: 50px;
+        height: 500px;
+        position: fixed;
+      }
+      
+      #bird1 {
+        top: 150px;
+        left: 150px;
+      }
+      
+      #bird2 {
+        top: 200px;
+        left: 200px;
+      }
+      
+      #bird3 {
+        top: 25px;
+        left: 400px;
+      }
+      
+      #bird4 {
+        top: 250px;
+        left: 500px;
+      }
     </style>
 	</head>
 
-	<body>
-    
-    <img src="tree.jpg" alt="">
+	<body>  
+    <img id="tree" src="tree.jpg" alt="">
+    <img class="bird" id="bird1" src="bird1.png" alt="">
+    <img class="bird" id="bird2" src="bird2.png" alt="">
+    <img class="bird" id="bird3" src="bird3.png" alt="">
+    <img class="bird" id="bird4" src="bird4.png" alt="">
 	</body>
 </html>
+
+<script>
+  // self executing function here
+  (function() {
+     // your page initialization code here
+     // the DOM will be available here
+
+  })();
+</script>
