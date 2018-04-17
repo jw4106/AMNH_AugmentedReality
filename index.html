@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
 	<head>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
 		<!-- Custom Styles -->
 		<style type="text/css">
 			body {
@@ -53,8 +58,11 @@
 <script>
   // self executing function here
   (function() {
-     // your page initialization code here
-     // the DOM will be available here
-
+    for (var i = 1; i <= 4; i++) {
+      $("#bird" + i).click(function(e) {
+        console.log(e)
+        console.log('hello!')
+      })
+    }
   })();
 </script>
