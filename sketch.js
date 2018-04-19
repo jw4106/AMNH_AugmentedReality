@@ -1,3 +1,4 @@
+var canvas;
 var tree, bird1, bird2, bird3, bird4;
 
 function setup() {
@@ -9,5 +10,7 @@ function setup() {
 }
 
 function draw() {
-  
+  // set the background size of our canvas
+  canvas = createCanvas(canvasLength, canvasLength);
+  canvas.parent('view-container')
 }
